@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-50 w-fit py-3 px-20 rounded-full text-white cursor-pointer font-bold
+    }
+}
+
+@layer utilities {
+    /* width */
+    ::-webkit-scrollbar,
+    .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #fff;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 2px solid #fff;
+    }
+
+    /* Track */
+    .dark ::-webkit-scrollbar-track {
+    background: #374151;
+    }
+
+    /* Handle */
+    .dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border: 2px solid #374151;
+    }
+}

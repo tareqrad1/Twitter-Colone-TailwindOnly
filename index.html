@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Project Twitter by Tailwind Only</title>
+    <link rel="icon" href="/imges/d41586-019-00653-5_16459150.jpg">
+    <link rel="stylesheet" href="/st.css">
+</head>
+<body class="bg-white dark:bg-900">
+    <!-- container -->
+    <div class="container mx-auto h-screen xl:max-w-[1200px] flex ">
+        <!-- left -->
+        <div class="left w-20 xl:w-[20%] h-full border-r dark:border-gray-700 border-gray-200">
+            <!-- logo -->
+            <a href="#" class="flex justify-center xl:justify-start">
+                <i class="fa-brands fa-twitter text-4xl my-2 text-100"></i>
+            </a>
+            <!-- slide -->
+            <ul class="side-left mt-10 lg:mt-5">
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="fa-solid fa-house text-xl  dark:text-100 text-xl mr-4 flex justify-center text-100 group-hover:text-100"></i>
+                    <h1 class="hidden xl:block  font-bold text-100">Home</h1>
+                </a></li>
+                <li class="group"><a href="#"  class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="fa-solid fa-hashtag text-xl mr-4 group-hover:text-100 text-gray-800 dark:text-white"></i>
+                    <h1 class="hidden xl:block  font-bold group-hover:text-100 text-gray-800 dark:text-white">Explore</h1>
+                </a></li>
+                <li class="group "><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="fa-solid fa-bell text-xl mr-4 text-gray-800 dark:text-white group-hover:text-100"></i>
+                    <h1 class="hidden xl:block font-bold text-gray-800 dark:text-white group-hover:text-100">Notifications</h1>
+                </a></li>
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class=" group-hover:text-100 fa-sharp fa-solid fa-envelope text-xl mr-4 text-gray-800 dark:text-white"></i>
+                    <h1 class=" group-hover:text-100 hidden xl:block font-bold text-gray-800 dark:text-white">Messages</h1>
+                </a></li>
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="group-hover:text-100 fa-solid fa-bookmark text-xl mr-4 text-gray-800 dark:text-white"></i>
+                    <h1 class="group-hover:text-100 hidden xl:block font-bold text-gray-800 dark:text-white">Bookmarks</h1>
+                </a></li>
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="group-hover:text-100 fa-solid fa-list text-xl mr-4 text-gray-800 dark:text-white"></i>
+                    <h1 class="group-hover:text-100 hidden xl:block font-bold text-gray-800 dark:text-white">Lists</h1>
+                </a></li>
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center mb-8">
+                    <i class="group-hover:text-100 fa-solid fa-user text-xl mr-4 text-gray-800 dark:text-white"></i>
+                    <h1 class="group-hover:text-100 hidden xl:block font-bold text-gray-800 dark:text-white">Profile</h1>
+                </a></li>
+                <li class="group"><a href="#" class="flex xl:justify-start justify-center items-center">
+                    <i class="group-hover:text-100 fa-solid fa-ellipsis text-xl mr-4 text-gray-800 dark:text-white "></i>
+                    <h1 class="group-hover:text-100 hidden xl:block font-bold text-gray-800 dark:text-white">More</h1>
+                </a></li>
+            </ul>
+            <div class="btn mb-10 mt-10 hidden xl:block">Tweet</div>
+            <!-- account -->
+            <div class="xl:hidden mt-10 mb-10 mx-auto flex justify-center items-center bg-100 rounded-full w-12 h-12"><i class="fa-solid fa-feather text-2xl text-white cursor-pointer"></i></div>
+            <div class="account flex space-x-2 items-center">
+                <img src="/imges/tareqLabtop.jpg" alt="tareq" class="w-[50px] h-[50px] rounded-full mx-auto lg:mx-0">
+                <div class="text hidden xl:block">
+                    <h2 class="text-gray-800 font-bold dark:text-white">Tareq Radi</h2>
+                    <p class="text-gray-400 cursor-pointer">sign out</p>
+                </div>
+                <div class="hidden xl:block"><i class="fa-solid fa-chevron-down cursor-pointer text-gray-800 dark:text-white"></i></div>
+            </div>
+        </div>
+
+        <!-- middle -->
+        <div class="middle xl:w-1/2 w-full h-screen overflow-y-auto overflow-x-hidden">
+            <!-- Home -->
+            <div class="border-b border-gray-700">
+                <div class="text flex justify-between items-center px-5 py-2">
+                    <h1 class="dark:text-white font-bold">Home</h1>
+                    <i class="fa-brands fa-twitter text-2xl my-2 text-100 "></i>
+                </div>
+            </div>
+            <!-- textarea -->
+            <div class="all-what-happing">
+                <div class="flex space-x-2 py-5 px-5">
+                    <img src="/imges/tareqLabtop.jpg" alt="" class="rounded-full w-[32px] h-[32px]">
+                    <textarea placeholder="What's Happening" class="bg-transparent w-full text-white outline-none resize-none"></textarea>
+                </div>
+                <div class="tweet flex items-center justify-between px-5 lg:px-10 py-8 border-b border-gray-300">
+                    <div class="icon space-x-2 lg:space-x-4">
+                        <i class="fa-solid fa-image text-100 text-xl"></i>
+                        <i class="fa-solid fa-image text-100 text-xl"></i>
+                        <i class="fa-solid fa-image text-100 text-xl"></i>
+                        <i class="fa-solid fa-image text-100 text-xl"></i>
+                    </div>
+                    <div class="btn py-2 px-8">Tweet</div>
+                </div>
+            </div>
+            <div class="border-b border-gray-300 flex justify-center py-3">
+                <h1 class="text-100 cursor-pointer">Show 9 Tweets</h1>
+            </div>
+            <!-- postTweets -->
+            <div class="post px-5 py-4">
+                <div class="user flex items-center">
+                    <img src="/imges/tareqLabtop.jpg" alt="tareq" class="w-[32px] h-[32px] rounded-full mr-1">
+                    <h1 class="dark:text-white font-semibold mr-1">Tareq Radi</h1>
+                    <p class="text-gray-400 font-medium">@tareqradi1.Nov 2</p>
+                </div>
+                <div class="text-imges mt-4">
+                    <div class="text m-w-[100%]">
+                        <p class=" m-w-[500px] lg:px-5 mb-4 font-bold dark:text-white">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+                        <p class=" lg:px-5 mb-4 font-bold dark:text-white">Experience is the name everyone gives to their <span class="text-100">#mistakes</span></p>
+                        <p class=" lg:px-5 mb-4 font-bold dark:text-white">Simplicity is the soul of efficiency.</p>
+                    </div>
+                    <div class="img">
+                        <img src="/imges/d41586-019-00653-5_16459150.jpg" alt="" class="rounded-lg border border-gray-500">
+                    </div>
+                    <div class="icons flex justify-between items-center cursor-pointer text-gray-400 dark:text-white mt-2">
+                        <div class="comment">
+                            <i class="fa-solid fa-comment text-xl hover:text-100"></i>
+                            <span class="text-sm">1.3 k</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-retweet text-xl hover:text-green-500"></i>
+                            <span>90.3 k</span>
+                        </div>
+                        <div class="like">
+                            <i class="fa-solid fa-heart text-xl text-red-600"></i>
+                            <span>120.3 k</span>
+                        </div>
+                        <i class="fa-solid fa-share text-xl hover:text-100"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-dark-mode grid place-items-center p-9 border-b border-t border-gray-800">
+                <div class="text text-center">
+                    <h1 class="text-white font-bold capitalize text-lg">Customize your view</h1>
+                    <p class="text-gray-500 text-sm mb-4">Manage your font size, color and background. These settings affect all the Twitter accounts on this browser.</p>
+                </div>
+                <div class="btn hover:bg-200 p-3 lg:px-20" id="btn">Toggle Dark Mode</div>
+            </div>
+            <!-- spin -->
+            <div class="py-3">
+                <svg class="w-8 h-8 mx-auto animate-spin">
+                    <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke: rgb(29, 161, 242); opacity: 0.2">
+                    </circle>
+                    <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="
+                            stroke: rgb(29, 161, 242);
+                            stroke-dasharray: 80;
+                            stroke-dashoffset: 60;">
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="right xl:w-[30%] xl:block hidden h-full w-full ml-2">
+            <div class="search relative my-2 w-full">
+                <input type="text" class="w-full bg-transparent border border-gray-700 rounded-full outline-1 py-1.5 pl-11 caret-black dark:caret-white dark:text-white" placeholder="Search Twitter">
+                <i class="fa-solid fa-magnifying-glass absolute left-[13px] top-[9px] text-xl text-gray-800"></i>
+            </div>
+            <div class="box-1 bg-gray-50 dark:bg-700 rounded-lg p-3">
+                <h1 class="pt-2 pb-5 dark:text-white font-bold border-b-[.5px] border-200">Whats Happening</h1>
+                <ul class="space-y-5 pt-2 dark:text-white font-bold cursor-pointer">
+                    <li class="font-bold border-b-[.5px] border-200 py-3">
+                        <h1>#Palestine</h1>
+                        <span class="font-normal text-sm text-gray-400">100.1k Tweets</span>
+                    </li>
+                    <li class="font-bold border-b-[.5px] border-200 py-3">
+                        <h1>#Amircan</h1>
+                        <span class="font-normal text-sm text-gray-400">2.3k Tweets</span>
+                    </li>
+                    <li class="font-bold border-b-[.5px] border-200 py-3">
+                        <h1>#Syria</h1>
+                        <span class="font-normal text-sm text-gray-400">40.7k Tweets</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-2 bg-gray-50 dark:bg-700 rounded-lg p-3 mt-2">
+                <h1 class="pt-2 pb-5 dark:text-white font-bold border-b-[.5px] border-200 capitalize">who to follow</h1>
+                <ul class="mt-2 cursor-pointer">
+                    <li class="flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <img src="/imges/tareqLabtop.jpg" alt="tareq" class="w-[40px] h-[40px] rounded-full">
+                            <div class="dark:text-white">
+                                <h1 class="font-bold">tareqradi</h1>
+                                <p>@tareqradi1</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-blue-400 py-1 px-6 font-bold rounded-full text-blue-400">follow</div>
+                    </li>
+                    <li class="flex justify-between items-center mt-5">
+                        <div class="flex items-center space-x-3">
+                            <img src="/imges/tareqLabtop.jpg" alt="tareq" class="w-[40px] h-[40px] rounded-full">
+                            <div class="dark:text-white">
+                                <h1 class="font-bold">tareqradi</h1>
+                                <p>@tareqradi1</p>
+                            </div>
+                        </div>
+                        <div class="border-2 border-blue-400 py-1 px-6 font-bold rounded-full text-blue-400">follow</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-2 bg-gray-50 dark:bg-700 rounded-lg p-3 mt-2  w-full">
+                <span class="w-[32px] h-[32px] bg-gray-400 rounded-full block animate-pulse"></span>
+                <div class="spans animate-pulse mt-1 space-y-1">
+                    <span class="w-[80%] h-[13px] bg-gray-400 block"></span>
+                    <span class="w-[60%] h-[13px] bg-gray-400 block"></span>
+                    <span class="w-[40%] h-[13px] bg-gray-400 block"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/src/index.js"></script>
+</body>
+</html>
